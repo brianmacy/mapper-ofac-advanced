@@ -1,5 +1,10 @@
 # mapper-ofac-advanced
 
+> **Fork note (brianmacy/mapper-ofac-advanced, branch `ofac-combined`):** this branch is upstream `main` plus the open
+> PR #140 (identifier TYPE normalization), the #145 branch (subsumed by #140), and the name fix
+> (`name-org-for-non-person`: `NAME_FULL` for persons, `NAME_ORG` for every other record type). It is the mapping used for
+> the NPI + OFAC repository. Reset it to upstream `main` once those changes merge there. Fork `main` stays an upstream mirror.
+
 Strict-mode ETL that converts the U.S. Treasury OFAC Advanced XML feed into
 Senzing-compatible JSON records.
 
